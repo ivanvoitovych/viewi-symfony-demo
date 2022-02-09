@@ -16,6 +16,18 @@
             <li>
                 <a href="/todo" class="mui--text-light">Todo</a>
             </li>
+            <li>
+                <a href="/protected" class="mui--text-light">Protected</a>
+            </li>
+            <li if="!$auth->isAuthenticated">
+                <a href="/login" class="mui--text-light">Login</a>
+            </li>
+            <li else>
+                <a href="#" class="mui--text-light" (click)="logout($event)">Logout</a>
+                <div if="$message">
+                    $message
+                </div>
+            </li>
         </ul>
     </div>
 </div>

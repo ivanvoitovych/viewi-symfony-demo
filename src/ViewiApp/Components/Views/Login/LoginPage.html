@@ -1,0 +1,21 @@
+<Layout title="Login">
+    <h1>Login</h1>
+    <form class="mui-form" (submit)="login($event)" autocomplete="on" id="login-form">
+        <div>
+            <div class="mui-textfield">
+                <input type="text" name="username" model="$username" autocomplete="username">
+                <label>Username or Email</label>
+            </div>
+            <div class="mui-textfield">
+                <input type="password" name="password" model="$password" autocomplete="current-password">
+                <label>Password</label>
+            </div>
+        </div>
+        <div>
+            <div class="mui--pull-right">
+                <button type="submit" class="mui-btn mui-btn--raised mui-btn--accent mui--pull-right">Login</button>
+            </div>
+            <div if="$message" class="mui--text-dark">$message</div>
+        </div>
+    </form>
+</Layout>

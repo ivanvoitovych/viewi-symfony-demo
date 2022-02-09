@@ -22,14 +22,13 @@ class ViewiSymfonyAdapter extends RouteAdapterBase
 
     public function handle($method, $url, $params = null)
     {
-        $kernel = new Kernel('dev', false);
-        $request = Request::create($url, $method, $params ?? []);
+        $kernel = new Kernel('viewi', false);
+        $request = Request::create($url, $method, $params ?? [], $_COOKIE, [], $_SERVER);
         $response = $kernel->handle($request, HttpKernelInterface::SUB_REQUEST);
-        if($response instanceof RawJsonResponse)
-        {
+        if ($response instanceof RawJsonResponse) {
             return $response->getRawData();
         }
-        return json_decode($response->getContent());
+        return json_decode($response->getContent(), true);
     }
 
     public function registerRoutes(RoutingConfigurator $routes)

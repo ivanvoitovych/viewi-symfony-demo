@@ -13,7 +13,7 @@
         "symfony/framework-bundle": "5.4.*",
         "symfony/runtime": "5.4.*",
         "symfony/yaml": "5.4.*",
-        "viewi/viewi": "^0.1.5"
+        "viewi/viewi": "dev-master"
     },
     "config": {
         "allow-plugins": {

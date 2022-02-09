@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a7c1e61d47d5ffac312d988550af504",
+    "content-hash": "3a1b7e401757d90b3e4ecde8e09b0325",
     "packages": [
         {
             "name": "psr/cache",
@@ -2613,21 +2613,22 @@
         },
         {
             "name": "viewi/viewi",
-            "version": "v0.1.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/viewi/viewi.git",
-                "reference": "80e76eb90355f202e959e9532cdc017750357c10"
+                "reference": "4f053b12f04562bac21a7f84e106f385b1a79d24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viewi/viewi/zipball/80e76eb90355f202e959e9532cdc017750357c10",
-                "reference": "80e76eb90355f202e959e9532cdc017750357c10",
+                "url": "https://api.github.com/repos/viewi/viewi/zipball/4f053b12f04562bac21a7f84e106f385b1a79d24",
+                "reference": "4f053b12f04562bac21a7f84e106f385b1a79d24",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0"
             },
+            "default-branch": true,
             "bin": [
                 "bin/viewi"
             ],
@@ -2650,15 +2651,17 @@
             ],
             "support": {
                 "issues": "https://github.com/viewi/viewi/issues",
-                "source": "https://github.com/viewi/viewi/tree/v0.1.5"
+                "source": "https://github.com/viewi/viewi/tree/master"
             },
-            "time": "2022-01-06T15:45:05+00:00"
+            "time": "2022-01-16T12:29:44+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "viewi/viewi": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
